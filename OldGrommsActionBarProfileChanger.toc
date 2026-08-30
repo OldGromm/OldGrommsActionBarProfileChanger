@@ -1,0 +1,22 @@
+## Interface: 11509, 20506, 50504, 120100
+## Title: OldGromm's Action Bar Profile Changer
+## Author: OldGromm
+## Version: 1.0
+## IconTexture: 133015
+## Notes: Switches between two action bar profiles.
+## Category: Action Bars
+## Category-deDE: Aktionsleisten
+## Category-esES: Barras de acción
+## Category-esMX: Barras de acción
+## Category-frFR: Barres d’action
+## Category-itIT: Barre delle azioni
+## Category-koKR: 액션 바
+## Category-ptBR: Barras de ação
+## Category-ruRU: Панели команд
+## Category-zhCN: 动作条
+## Category-zhTW: 快捷列
+## Bindings: bindings.xml
+## LoadSavedVariablesFirst: 1
+## SavedVariables: OGABPC_Profiles, OGABPC_CurrentProfile, OGABPC_Messages
+
+OldGrommsActionBarProfileChanger.lua

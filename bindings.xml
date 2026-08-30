@@ -1,0 +1,6 @@
+<Bindings>
+    <Binding name="Switch Profiles" category="OldGromm's Action Bar Profile Changer">
+        OGABPC_ChangeSetups()
+		C_UI.Reload()
+    </Binding>
+</Bindings>
