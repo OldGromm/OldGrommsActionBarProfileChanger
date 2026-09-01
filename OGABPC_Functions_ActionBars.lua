@@ -54,7 +54,9 @@ function OGABPC_ActionBars_Save()
                 ActionInfo = select(3, GetCursorInfo())
 				PlaceAction(i)
             elseif ActionType == "macro" then
-                local MacroID = select(2, GetActionInfo(i))
+			    PickupAction(i)
+                local MacroID = select(2, GetCursorInfo())
+				PlaceAction(i)
 				ActionInfo = C_Macro.GetMacroName(MacroID)
 			elseif ActionType == "outfit" then
 			    ActionInfo = select(2, GetActionInfo(i))
