@@ -1,0 +1,207 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\Blizzard_SharedXML\UI.xsd">
+
+	<FontFamily name="OGABPCFontSize12" virtual="true">
+		<Member alphabet="roman">
+			<Font font="Fonts\FRIZQT__.TTF" height="16">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="1" y="-1"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+		<Member alphabet="korean">
+			<Font font="Fonts\2002.TTF" height="16">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="1" y="-1"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+		<Member alphabet="simplifiedchinese">
+			<Font font="Fonts\ARKai_T.ttf" height="16">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="1" y="-1"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+		<Member alphabet="traditionalchinese">
+			<Font font="Fonts\bKAI00M.TTF" height="16">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="1" y="-1"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+		<Member alphabet="russian">
+			<Font font="Fonts\FRIZQT___CYR.TTF" height="16">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="1" y="-1"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+	</FontFamily>
+
+	<Font name="OGABPCCustomFont" inherits="OGABPCFontSize12" justifyH="LEFT" virtual="true">
+		<Color r="1.000" g="1.000" b="1.000"/>
+	</Font>
+
+	<Font name="OGABPCFontNormal" inherits="OGABPCFontSize12" virtual="true">
+		<Color r="1.0" g="1.0" b="1.0"/>
+	</Font>
+
+	<Font name="OGABPCFontHighlight" inherits="OGABPCFontSize12" virtual="true">
+		<Color r="0.941" g="0.925" b="0.035"/>
+	</Font>
+
+	<Font name="OGABPCFontDisable" inherits="OGABPCFontSize12" virtual="true">
+		<Color r="0.831" g="0.831" b="0.831"/>
+	</Font>	
+
+	<DropdownButton name="OGABPCDropdownProfiles" mixin="WowStyle1DropdownMixin" virtual="true">
+		<Size x="140" y="30"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture parentKey="Background" atlas="common-dropdown-textholder" useAtlasSize="true">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="-8" y="7"/>
+						<Anchor point="BOTTOMRIGHT" x="8" y="-9"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture parentKey="Arrow" atlas="common-dropdown-a-button" useAtlasSize="true">
+					<Anchors>
+						<Anchor point="RIGHT" relativePoint="RIGHT" x="1" y="-3"/>
+					</Anchors>
+				</Texture>
+				<FontString parentKey="Text" inherits="OGABPCCustomFont" wordwrap="false" justifyH="LEFT">
+					<Size x="0" y="10"/>
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeKey="$parent.Arrow" relativePoint="LEFT"/>
+						<Anchor point="TOPLEFT" x="8" y="-10"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad method="OnLoad"/>
+			<OnShow method="OnShow"/>
+			<OnMouseDown method="OnMouseDown"/>
+			<OnMouseUp method="OnMouseUp"/>
+			<OnEnter method="OnEnter"/>
+			<OnLeave method="OnLeave"/>
+			<OnEnable method="OnEnable"/>
+			<OnDisable method="OnDisable"/>
+		</Scripts>
+	</DropdownButton>
+
+	<DropdownButton name="OGABPCDropdownAddonList" mixin="WowStyle1DropdownMixin" virtual="true">
+		<Size x="155" y="30"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture parentKey="Background" atlas="common-dropdown-textholder" useAtlasSize="true">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="-8" y="7"/>
+						<Anchor point="BOTTOMRIGHT" x="8" y="-9"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture parentKey="Arrow" atlas="common-dropdown-a-button" useAtlasSize="true">
+					<Anchors>
+						<Anchor point="RIGHT" relativePoint="RIGHT" x="1" y="-3"/>
+					</Anchors>
+				</Texture>
+				<FontString parentKey="Text" inherits="OGABPCCustomFont" wordwrap="false" justifyH="LEFT">
+					<Size x="0" y="10"/>
+					<Anchors>
+						<Anchor point="TOPRIGHT" relativeKey="$parent.Arrow" relativePoint="LEFT"/>
+						<Anchor point="TOPLEFT" x="8" y="-10"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad method="OnLoad"/>
+			<OnShow method="OnShow"/>
+			<OnMouseDown method="OnMouseDown"/>
+			<OnMouseUp method="OnMouseUp"/>
+			<OnEnter method="OnEnter"/>
+			<OnLeave method="OnLeave"/>
+			<OnEnable method="OnEnable"/>
+			<OnDisable method="OnDisable"/>
+		</Scripts>
+	</DropdownButton>
+
+	<EditBox name="OGABPCInputBoxTemplate" inherits="InputBoxScriptTemplate" virtual="true"/>
+
+	<Button name="OGABPCButtonTemplate" inherits="OGABPCButtonNoTooltipTemplate" mixin="UIPanelButtonMixin" virtual="true">
+		<Scripts>
+			<OnEnter method="OnEnter"/>
+			<OnLeave method="OnLeave"/>
+		</Scripts>
+	</Button>
+
+		<Button name="OGABPCButtonNoTooltipTemplate" mixin="UIButtonFitToTextBehaviorMixin" virtual="true">
+			<KeyValues>
+				<KeyValue key="fitTextCanWidthDecrease" value="true" type="boolean"/>
+				<KeyValue key="fitTextWidthPadding" value="40" type="number"/>
+			</KeyValues>
+			<Size x="40" y="22"/>
+			<Layers>
+				<Layer level="BACKGROUND">
+					<Texture parentKey="Left" file="Interface\Buttons\UI-Panel-Button-Up">
+						<Size x="12" y="22"/>
+						<Anchors>
+							<Anchor point="TOPLEFT"/>
+							<Anchor point="BOTTOMLEFT"/>
+						</Anchors>
+						<TexCoords left="0" right="0.09375" top="0" bottom="0.6875"/>
+					</Texture>
+					<Texture parentKey="Right" file="Interface\Buttons\UI-Panel-Button-Up">
+						<Size x="12" y="22"/>
+						<Anchors>
+							<Anchor point="TOPRIGHT"/>
+							<Anchor point="BOTTOMRIGHT"/>
+						</Anchors>
+						<TexCoords left="0.53125" right="0.625" top="0" bottom="0.6875"/>
+					</Texture>
+					<Texture parentKey="Middle" file="Interface\Buttons\UI-Panel-Button-Up">
+						<Size x="12" y="22"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeKey="$parent.Left" relativePoint="TOPRIGHT"/>
+							<Anchor point="BOTTOMRIGHT" relativeKey="$parent.Right" relativePoint="BOTTOMLEFT"/>
+						</Anchors>
+						<TexCoords left="0.09375" right="0.53125" top="0" bottom="0.6875"/>
+					</Texture>
+				</Layer>
+			</Layers>
+			<Scripts>
+				<OnLoad function="UIPanelButton_OnLoad"/>
+				<OnMouseDown function="UIPanelButton_OnMouseDown"/>
+				<OnMouseUp function="UIPanelButton_OnMouseUp"/>
+				<OnShow function="UIPanelButton_OnShow"/>
+				<OnDisable function="UIPanelButton_OnDisable"/>
+				<OnEnable function="UIPanelButton_OnEnable"/>
+			</Scripts>
+			<ButtonText name="$parentText" parentKey="Text"/>
+			<NormalFont style="OGABPCFontNormal"/>
+			<HighlightFont style="OGABPCFontHighlight"/>
+			<DisabledFont style="OGABPCFontDisable"/>
+			<HighlightTexture inherits="UIPanelButtonHighlightTexture"/>
+		</Button>
+
+</Ui>
